@@ -26,7 +26,7 @@ const promise2 = new Promise((resolve, reject) => {
 promise2.catch(() => {
   const div = document.createElement('div');
 
-  div.classList.add('error-message');
+  div.classList.add('message', 'error-message');
   div.textContent = 'Promise was rejected!';
 
   document.body.append(div);
